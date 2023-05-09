@@ -13,7 +13,6 @@ namespace POO23A_CGJR
 {
     public partial class DlgPractica2 : Form
     {
-        private Button button1;
 
         public DlgPractica2()
         {
@@ -28,7 +27,7 @@ namespace POO23A_CGJR
         {
             CZombie zombie;
 
-            zombie = new CZombie(this);
+            zombie = new CZombie(this.PnlZombi);
 
             zombie.Nacer();
             zombie.Desplazar(1);
@@ -38,34 +37,74 @@ namespace POO23A_CGJR
 
         public void Identificar(Object sender, EventArgs e)
         {
-           // MessageBox.Show(Name + " (" + XNacimiento + " , " + YNacimiento + ") Nacido = "+ Nacido);
+            // MessageBox.Show(Name + " (" + XNacimiento + " , " + YNacimiento + ") Nacido = "+ Nacido);
         }
 
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(DlgPractica2));
+            PnlLeft = new Panel();
+            button1 = new Button();
+            PnlTop = new Panel();
+            PnlZombi = new Panel();
+            PnlLeft.SuspendLayout();
+            SuspendLayout();
+            // 
+            // PnlLeft
+            // 
+            PnlLeft.BackColor = Color.DarkOliveGreen;
+            PnlLeft.Controls.Add(button1);
+            PnlLeft.Dock = DockStyle.Left;
+            PnlLeft.Location = new Point(0, 0);
+            PnlLeft.Name = "PnlLeft";
+            PnlLeft.Size = new Size(154, 398);
+            PnlLeft.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Crear Zombie";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new Point(12, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(119, 23);
+            button1.TabIndex = 1;
+            button1.Text = "Crear Zombie";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // PnlTop
+            // 
+            PnlTop.BackColor = SystemColors.ControlDark;
+            PnlTop.Dock = DockStyle.Top;
+            PnlTop.Location = new Point(154, 0);
+            PnlTop.Name = "PnlTop";
+            PnlTop.Size = new Size(674, 52);
+            PnlTop.TabIndex = 2;
+            // 
+            // PnlZombi
+            // 
+            PnlZombi.BackgroundImage = (Image)resources.GetObject("PnlZombi.BackgroundImage");
+            PnlZombi.BackgroundImageLayout = ImageLayout.Stretch;
+            PnlZombi.Dock = DockStyle.Fill;
+            PnlZombi.Location = new Point(154, 52);
+            PnlZombi.Name = "PnlZombi";
+            PnlZombi.Size = new Size(674, 346);
+            PnlZombi.TabIndex = 3;
             // 
             // DlgPractica2
             // 
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(828, 398);
-            this.Controls.Add(this.button1);
-            this.Name = "DlgPractica2";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.ResumeLayout(false);
-
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(828, 398);
+            Controls.Add(PnlZombi);
+            Controls.Add(PnlTop);
+            Controls.Add(PnlLeft);
+            Name = "DlgPractica2";
+            WindowState = FormWindowState.Maximized;
+            PnlLeft.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
+        private Panel PnlLeft;
+        private Button button1;
+        private Panel PnlTop;
+        private Panel PnlZombi;
     }
 }

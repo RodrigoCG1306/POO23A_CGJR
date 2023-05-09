@@ -83,3 +83,4 @@ C:\Users\Azael\source\repos\POO23A_CGJR 02-03-2023\POO23A_CGJR\obj\Debug\net6.0-
 C:\Users\Azael\source\repos\POO23A_CGJR 02-03-2023\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.genruntimeconfig.cache
 C:\Users\Azael\source\repos\POO23A_CGJR 02-03-2023\POO23A_CGJR\obj\Debug\net6.0-windows\ref\POO23A_CGJR.dll
 C:\Users\Azael\source\repos\POO23A_CGJR 02-03-2023\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.DlgPractica2.resources
+C:\Users\Rodrigo\Source\Repos\POO23A_CGJR\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.DlgPractica2.resources

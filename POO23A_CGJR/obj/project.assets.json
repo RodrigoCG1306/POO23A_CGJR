@@ -8,23 +8,23 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Azael\\.nuget\\packages\\": {},
+    "C:\\Users\\Rodrigo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Azael\\source\\repos\\POO23A_CGJR 02-03-2023\\POO23A_CGJR\\POO23A_CGJR.csproj",
+      "projectUniqueName": "C:\\Users\\Rodrigo\\Source\\Repos\\POO23A_CGJR\\POO23A_CGJR\\POO23A_CGJR.csproj",
       "projectName": "POO23A_CGJR",
-      "projectPath": "C:\\Users\\Azael\\source\\repos\\POO23A_CGJR 02-03-2023\\POO23A_CGJR\\POO23A_CGJR.csproj",
-      "packagesPath": "C:\\Users\\Azael\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Azael\\source\\repos\\POO23A_CGJR 02-03-2023\\POO23A_CGJR\\obj\\",
+      "projectPath": "C:\\Users\\Rodrigo\\Source\\Repos\\POO23A_CGJR\\POO23A_CGJR\\POO23A_CGJR.csproj",
+      "packagesPath": "C:\\Users\\Rodrigo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Rodrigo\\Source\\Repos\\POO23A_CGJR\\POO23A_CGJR\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Azael\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Rodrigo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -69,7 +69,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
