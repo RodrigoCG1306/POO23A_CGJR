@@ -93,6 +93,16 @@ namespace POO23A_CGJR.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Chris_Walker {
+            get {
+                object obj = ResourceManager.GetObject("Chris Walker", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cypher {
             get {
                 object obj = ResourceManager.GetObject("Cypher", resourceCulture);
