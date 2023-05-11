@@ -4,6 +4,9 @@
     <Compile Update="Clases\CZombie.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="Clases\CZombiRomero.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Update="CZombiRomero.cs">
       <SubType>Component</SubType>
     </Compile>

@@ -176,7 +176,7 @@ namespace POO23A_CGJR
             {
                 Thread.Sleep(150);
                 BackColor = ColorNacimiento;
-                Image = Resources.Chris_Walker;
+               // Image = Resources.Chris_Walker;
                 Nacido = true;
             });
 
