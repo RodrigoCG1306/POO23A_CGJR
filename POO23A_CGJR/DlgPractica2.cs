@@ -38,7 +38,7 @@ namespace POO23A_CGJR
         {
             CZombie zombie;
 
-            zombie = new CZombie(this.PnlZombi);
+            zombie = new CZombie(this);
 
             zombie.Nacer();
             zombie.Desplazar();
@@ -51,7 +51,7 @@ namespace POO23A_CGJR
         {
             CZombiRomero zombie;
 
-            zombie = new CZombiRomero(this.PnlZombi);
+            zombie = new CZombiRomero(this);
 
             zombie.Nacer();
             zombie.Desplazar();
@@ -63,30 +63,84 @@ namespace POO23A_CGJR
         {
             ProcesoColision = new Thread(() =>
             {
-                while(true)
-                {
+                int[] Localizacion, Localizacion2;
 
+                Localizacion = new int[4];
+                Localizacion2 = new int[4];
+
+                //Etapa 1: Obtiene coordenadas y procesa colores
+                while (true)
+                {
+                    foreach (var Control in this.Controls)
+                    {
+                        if (Control.GetType() == typeof(CZombie) ||
+                            Control.GetType() == typeof(CZombiRomero))
+                        {
+                            CZombie Zombie;
+
+                            Zombie = (CZombie)Control;
+                            Localizacion = Zombie.GetAreaLocalizacion();
+
+                            Thread.Sleep(500);
+                            Zombie.BackColor = Color.Fuchsia;
+                            Zombie.Text = Localizacion[0].ToString() + ", " + Localizacion[1].ToString();
+                            Thread.Sleep(500);
+                            Zombie.BackColor = Color.Aqua;
+                            Zombie.Text = Localizacion[0].ToString() + ", " + Localizacion[1].ToString();
+                        }
+                    }
+
+                    //Etapa 2: Compara coordenadas
+                    for (int i = 0; i < this.Controls.Count; i++)
+                    {
+                        Control Control, Control2;
+
+                        Control = this.Controls[i];
+
+                        if(i >= this.Controls.Count - 1)
+                        {
+                            continue;
+                        }
+
+                        Control2 = this.Controls[i+1];
+
+                        if (Control.GetType() == typeof(CZombie) ||
+                           Control.GetType() == typeof(CZombiRomero) &&
+                           Control2.GetType() == typeof(CZombie) ||
+                           Control2.GetType() == typeof(CZombiRomero))
+                        {
+                            CZombie Zombie;
+                            CZombie Zombie2;
+                            int Z1X1, Z1Y1, Z1X2, Z1Y2;
+                            int Z2X1, Z2Y1, Z2X2, Z2Y2;
+
+                            Zombie = (CZombie)Control;
+                            Localizacion = Zombie.GetAreaLocalizacion();
+
+                            Zombie2 = (CZombie)Control2;
+                            Localizacion2 = Zombie2.GetAreaLocalizacion();
+
+                            Z1X1 = Localizacion[0];
+                            Z1Y1 = Localizacion[1];
+                            Z1X2 = Localizacion[2];
+                            Z1Y2 = Localizacion[3];
+
+                            Z2X1 = Localizacion2[0];
+                            Z2Y1 = Localizacion2[1];
+                            Z2X2 = Localizacion2[2];
+                            Z2Y2 = Localizacion2[3];
+
+                            if ((Z2X2 >= Z1X1 && Z2X2 <= Z1X1 + 100) ||
+                                (Z2X2 <= Z1X1 && Z2X2 >= Z1X1 - 100))
+                            {
+                                MessageBox.Show("!Colision¡");
+
+                            }
+                        }
+                    }                    
                 }
             });
-
             ProcesoColision.Start();
-
-            for(int i = 0; i < this.Controls.Count; i++)
-            {
-                
-            }
-
-            foreach (var Control in this.Controls)
-            {
-                if(Control.GetType() == typeof(CZombie) || 
-                    Control.GetType() == typeof(CZombiRomero))
-                {
-                    CZombie Zombie;
-
-                    Zombie = (CZombie)Control;
-                    Zombie.GetAreaLocalizacion();
-                }
-            }
         }
 
         public void Identificar(Object sender, EventArgs e)
@@ -96,13 +150,12 @@ namespace POO23A_CGJR
 
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DlgPractica2));
             this.PnlLeft = new System.Windows.Forms.Panel();
+            this.BtnColision = new System.Windows.Forms.Button();
             this.BtnZR = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.PnlTop = new System.Windows.Forms.Panel();
             this.PnlZombi = new System.Windows.Forms.Panel();
-            this.BtnColision = new System.Windows.Forms.Button();
             this.PnlLeft.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -117,6 +170,16 @@ namespace POO23A_CGJR
             this.PnlLeft.Name = "PnlLeft";
             this.PnlLeft.Size = new System.Drawing.Size(154, 398);
             this.PnlLeft.TabIndex = 1;
+            // 
+            // BtnColision
+            // 
+            this.BtnColision.Location = new System.Drawing.Point(12, 94);
+            this.BtnColision.Name = "BtnColision";
+            this.BtnColision.Size = new System.Drawing.Size(119, 47);
+            this.BtnColision.TabIndex = 3;
+            this.BtnColision.Text = "Colisión";
+            this.BtnColision.UseVisualStyleBackColor = true;
+            this.BtnColision.Click += new System.EventHandler(this.BtnColision_Click);
             // 
             // BtnZR
             // 
@@ -149,23 +212,12 @@ namespace POO23A_CGJR
             // 
             // PnlZombi
             // 
-            this.PnlZombi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PnlZombi.BackgroundImage")));
             this.PnlZombi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PnlZombi.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlZombi.Location = new System.Drawing.Point(154, 52);
             this.PnlZombi.Name = "PnlZombi";
             this.PnlZombi.Size = new System.Drawing.Size(674, 346);
             this.PnlZombi.TabIndex = 3;
-            // 
-            // BtnColision
-            // 
-            this.BtnColision.Location = new System.Drawing.Point(12, 94);
-            this.BtnColision.Name = "BtnColision";
-            this.BtnColision.Size = new System.Drawing.Size(119, 47);
-            this.BtnColision.TabIndex = 3;
-            this.BtnColision.Text = "Colisión";
-            this.BtnColision.UseVisualStyleBackColor = true;
-            this.BtnColision.Click += new System.EventHandler(this.BtnColision_Click);
             // 
             // DlgPractica2
             // 

@@ -7,9 +7,6 @@
     <Compile Update="Clases\CZombiRomero.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="CZombiRomero.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Update="DlgPractica1.cs">
       <SubType>Form</SubType>
     </Compile>
