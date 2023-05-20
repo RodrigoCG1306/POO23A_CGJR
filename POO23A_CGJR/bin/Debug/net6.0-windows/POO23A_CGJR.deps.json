@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "POO23A_CGJR/1.0.0": {
+        "runtime": {
+          "POO23A_CGJR.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "POO23A_CGJR/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
