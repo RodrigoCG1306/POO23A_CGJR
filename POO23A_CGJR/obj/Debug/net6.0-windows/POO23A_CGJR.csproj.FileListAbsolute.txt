@@ -84,3 +84,25 @@ C:\Users\Azael\source\repos\POO23A_CGJR 02-03-2023\POO23A_CGJR\obj\Debug\net6.0-
 C:\Users\Azael\source\repos\POO23A_CGJR 02-03-2023\POO23A_CGJR\obj\Debug\net6.0-windows\ref\POO23A_CGJR.dll
 C:\Users\Azael\source\repos\POO23A_CGJR 02-03-2023\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.DlgPractica2.resources
 C:\Users\Rodrigo\Source\Repos\POO23A_CGJR\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.DlgPractica2.resources
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\bin\Debug\net6.0-windows\POO23A_CGJR.exe
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\bin\Debug\net6.0-windows\POO23A_CGJR.dll.config
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\bin\Debug\net6.0-windows\POO23A_CGJR.deps.json
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\bin\Debug\net6.0-windows\POO23A_CGJR.runtimeconfig.json
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\bin\Debug\net6.0-windows\POO23A_CGJR.dll
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\bin\Debug\net6.0-windows\POO23A_CGJR.pdb
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.csproj.AssemblyReference.cache
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.DlgPractica1.resources
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.DlgPractica2.resources
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.DlgPrincipal.resources
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.DlgSeleccionPractica.resources
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.Properties.Resources.resources
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.csproj.GenerateResource.cache
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.AssemblyInfoInputs.cache
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.AssemblyInfo.cs
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.dll
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\obj\Debug\net6.0-windows\refint\POO23A_CGJR.dll
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.pdb
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\obj\Debug\net6.0-windows\POO23A_CGJR.genruntimeconfig.cache
+C:\Users\Rodrigo\source\repos\POO23A_CGJR 20-05-2023\POO23A_CGJR\obj\Debug\net6.0-windows\ref\POO23A_CGJR.dll
